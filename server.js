@@ -10,7 +10,7 @@ const app = express()
 const PORT = 7000;
 app.use(express.json())
 app.use(cors({
-    origin: 'http://localhost:5173', // Your frontend's origin
+    origin: ['http://localhost:5173', "https://frontend-rj0s86q2s-saifuls-projects-a8d67948.vercel.app/"], // Your frontend's origin
     credentials: true, // Allow credentials (cookies, HTTP authentication)
 }))
 app.use(cookieParser());
